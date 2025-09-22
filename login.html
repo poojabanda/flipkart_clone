@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Login</title>
+    <style>
+        /* General styling */
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f1f3f6; /* Light background like Flipkart */
+}
+
+/* Flex container for layout */
+.container {
+  display: flex;
+  background: white;
+  width: 700px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  gap: 30px;
+}
+.inline-text {
+  display: inline-block;
+  font-size:8px;
+}
+.b1{
+  background-color: orange;
+  height: 40px;
+}
+.a1{
+  margin-top: 250px;
+  text-decoration: none;
+  font size:5px;
+  margin-left:20px;
+}
+/* Left section - Image */
+.img1 {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  column-gap: 10px;
+}
+
+/* Right section - Login form */
+.c1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width:350px;
+}
+
+/* Input field */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #888; /* Always visible line */
+  background: transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Placeholder animation */
+.input-field::placeholder {
+  color: #888;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.input-field:hover {
+  border-bottom: 2px solid #007bff; /* Blue highlight on hover */
+}
+
+.input-field:hover::placeholder {
+  color: #007bff; /* Change placeholder text color on hover */
+}
+
+/* Paragraph text */
+p {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+  width: 80%;
+}
+
+/* Links inside paragraph */
+p a {
+  color: #2874f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Left side image -->
+        <div>
+            <img src="login.png" class="img1"/>
+        </div>
+        
+        <!-- Right side form -->
+        <div class="c1">
+            <input type="text" class="input-field" placeholder="Enter Email/mobile"/>
+            <p class="inline-text">By continuing, you agree to Flipkart's <a href="#" class="inline-text">Terms of Use</a> and <a href="#" class="inline-text">Privacy Policy</a>.</p>
+            <button class="b1">Request OTP</button>
+            <a href="" class="a1">New to Flipkart? Create an account</a>
+        </div>
+    </div>
+</body>
+</html>

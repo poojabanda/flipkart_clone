@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="scripts.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipkart.com</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="flipkart.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="navBar">
+
+      <div class="logoSection">
+        <div class="flipkart-logo">
+          <h2>Flipkart</h2>
+        </div>
+
+        <div>
+          <p class="logo-text">Explore <span id="plus">Plus+</span></p>
+        </div>
+      </div>
+
+      <div class="searchBox">
+        
+        <div class="search-logo">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input class="input" type="text" placeholder="Search for products, brands and more" />
+
+      </div>
+
+      <div class="loginBox">
+  
+        <div class="dropdown">
+          <i class="fa fa-fw fa-user"></i>
+          <a href="login.html" style="text-decoration: none;">
+          <button class="dropbtn">Login</button>
+        </a>
+          <div class="dropdown-content">
+              <p>New customer?<a href="signup.html" style="background-color:blue;">Sign up</a></p>
+              <a href="#">My profile</a>
+              <a href="#">Flipkart plus zone</a>
+              <a href="#">Orders</a>
+              <a href="#">Wishlist</a>
+              <a href="#">Rewards</a>
+              <a href="#">Gift cards</a>
+          </div>
+      </div>
+  
+      </div>
+      <div class="becomesellar">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+      </div>
+      <div class="cartbox">
+        <p>Become a Seller</p>
+      </div>
+    </div>
+  </header>
+
+
+  <!-------------- MENU BAR -------------->
+
+
+  <div class="belowNavBar">
+
+    <div class="smallCard">
+      <img src="grocery.jpg" alt="menuIcon1" class="card">
+      <p>Grocery</p>
+      
+      
+    </div>
+
+    <div class="smallCard">
+      <img src="moblies.jpg" alt="menuIcon1" class="card">
+      <p>Mobiles</p>
+    </div>
+  <div class="smallCard">
+      <img src="fashion.jpg" alt="menuIcon1" class="card">
+      <p>Fashion</p>
+  </div>
+
+
+    <li class="nav-item dropdown smallCard">
+      <img src="laptops.jpg" alt="menuIcon1" class="card">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+        Laptops&#11167;
+      </a>
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">Apple</a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">MacBook Air M1</a></li>
+              <li><a class="dropdown-item" href="#">MacBook Pro 13-inch</a></li>
+              <li><a class="dropdown-item" href="#">MacBook Pro 16-inch</a></li>
+          </ul>
+      </li>
+          <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Dell</a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dell Latitude 7420</a></li>
+                  <li><a class="dropdown-item" href="#">Dell Alienware m15 (Gaming)</a></li>
+                  <li><a class="dropdown-item" href="#">Dell XPS 15</a></li>
+              </ul>
+          </li>
+      </ul>
+  </li>
+    <div class="smallCard">
+      <img src="home.jpg" alt="menuIcon1" class="card">
+      <div class="dropdown">
+          <button class="dropbtn">Home&#11167;</button>
+          <div class="dropdown-content">
+              <div class="dropdown-submenu">
+                  <a href="#" class="dropdown-item dropdown-toggle">Furniture</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Sofas & Seating</a>
+                      <a class="dropdown-item" href="#">Beds</a>
+                      <a class="dropdown-item" href="#">Dining Tables</a>
+                      <a class="dropdown-item" href="#">Wardrobes</a>
+                  </div>
+              </div>
+              <div class="dropdown-submenu">
+                  <a href="#" class="dropdown-item dropdown-toggle">Home Decor</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Wall Art & Paintings</a>
+                      <a class="dropdown-item" href="#">Clocks</a>
+                      <a class="dropdown-item" href="#">Curtains & Blinds</a>
+                      <a class="dropdown-item" href="#">Showpieces & Figurines</a>
+                  </div>
+              </div>
+              <div class="dropdown-submenu">
+                  <a href="#" class="dropdown-item dropdown-toggle">Kitchen</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Cookware & Bakeware</a>
+                      <a class="dropdown-item" href="#">Dinner Sets</a>
+                      <a class="dropdown-item" href="#">Storage Containers</a>
+                      <a class="dropdown-item" href="#">Kitchen Tools</a>
+                  </div>
+              </div>
+              <div class="dropdown-submenu">
+                  <a href="#" class="dropdown-item dropdown-toggle">Storage & Organization</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Racks & Shelves</a>
+                      <a class="dropdown-item" href="#">Shoe Racks</a>
+                      <a class="dropdown-item" href="#">Boxes & Bins</a>
+                      <a class="dropdown-item" href="#">Laundry Baskets</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    <div class="smallCard">
+
+      <img src="electronics.jpg" alt="menuIcon1" class="card">
+      <p>Electronic</p>
+    </div>
+
+    <div class="smallCard">
+      <img src="travel.jpg" alt="menuIcon1" class="card">
+      <p>Travel</p>
+    </div>
+    <div class="smallCard">
+      <img src="toys.jpeg" alt="menuIcon1" class="card">
+      <div class="dropdown">
+          <button class="dropbtn">Toys&#11167;</button>
+          <div class="dropdown-content">
+              <div class="dropdown-submenu">
+                  <a href="#" class="dropdown-item dropdown-toggle">Outdoor & Sports</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Bicycles</a>
+                      <a class="dropdown-item" href="#">Scooters</a>
+                      <a class="dropdown-item" href="#">Skating</a>
+                  </div>
+              </div>
+              <div class="dropdown-submenu">
+                  <a href="#" class="dropdown-item dropdown-toggle">Educational Toys</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">STEM Toys</a>
+                      <a class="dropdown-item" href="#">Puzzles</a>
+                      <a class="dropdown-item" href="#">Memory Games</a>
+                  </div>
+              </div>
+              <div class="dropdown-submenu">
+                  <a href="#" class="dropdown-item dropdown-toggle">Soft Toys</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Teddy Bears</a>
+                      <a class="dropdown-item" href="#">Plush Animals</a>
+                      <a class="dropdown-item" href="#">Cartoon Characters</a>
+                  </div>
+              </div>
+              <div class="dropdown-submenu">
+                  <a href="#" class="dropdown-item dropdown-toggle">Action Figures</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Superheroes</a>
+                      <a class="dropdown-item" href="#">Anime & Cartoon</a>
+                      <a class="dropdown-item" href="#">Movie Characters</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+      
+<div class="nav-item dropdown smallCard">
+  <img src="bikes.jpeg" alt="menuIcon1" class="card">
+  <a class="nav-link dropdown-toggle" href="#" id="bikesDropdown" role="button" data-bs-toggle="dropdown">
+      Bikes&#11167;
+  </a>
+  <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Petrol Bikes</a></li>
+      <li><a class="dropdown-item" href="#">Electric Bikes</a></li>
+  </ul>
+</div>
+    </div>
+
+
+  <div class="line"></div>
+  
+  <!-------------- MAIN IMG -------------->
+  
+    <div class="herosection">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="heroImg.png" class="d-block w-100 " alt="..." style="height: 300px;">
+        </div>
+        <div class="carousel-item">
+          <img src="flipkart sale.jpeg" class="d-block w-100" alt="..." style="height: 300px;">
+        </div>
+        <div class="carousel-item">
+          <img src="heroImg.png" class="d-block w-100" alt="..." style="height: 300px;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="line"></div>
+
+  <!-------------- ITEM SECTION -------------->
+  <h3>Best of Today</h3>
+  <div class="bestOfToday">
+    <div class="bestItem">
+        <img src="wirelsee.jpeg" alt="Product 1">
+        <p class="bestItemTitle">Wireless Earbuds</p>
+        <p class="bestItemPrice">₹2,499</p>
+    </div>
+    <div class="bestItem">
+        <img src="swatch.jpeg" alt="Product 2">
+        <p class="bestItemTitle">Smartwatch</p>
+        <p class="bestItemPrice">₹3,999</p>
+    </div>
+
+    <div class="bestItem">
+        <img src="speakers.jpeg" alt="Product 3">
+        <p class="bestItemTitle">Bluetooth Speaker</p>
+        <p class="bestItemPrice">₹1,999</p>
+    </div>
+</div>
+
+<div class="viewAllSection">
+    <button class="viewMoreButton">View More</button>
+</div>
+
+  <div class="line"></div>
+  <div class="itemSection">
+
+    <div class="item">
+      <div class="itemHeadName">
+        <p>Get Set for Sports</p>
+      </div>
+
+      <div class="viewAllSection">
+        <div class="viewAllButton">
+          <p class="viewAllText">VIEW ALL</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="menstshrt.jpeg" alt="cloth1" class="itemImg">
+      <p class="itemDescription">Men's T-shirt</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="jackets.jpeg" alt="cloth2" class="itemImg">
+      <p class="itemDescription">Jackets</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="tracksuit.jpeg" alt="cloth3" class="itemImg">
+      <p class="itemDescription">Men's Trackshut</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="shoes.jpeg" alt="cloth4" class="itemImg">
+      <p class="itemDescription">Shoes</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+  </div>
+
+  <div class="line"></div>
+
+
+  <div class="itemSection">
+
+    <div class="item">
+      <div class="itemHeadName">
+        <p>Best of Electronics</p>
+      </div>
+
+      <div class="viewAllSection">
+        <div class="viewAllButton">
+          <p class="viewAllText">VIEW ALL</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="hometheaters.jpg" alt="electronic img" class="itemImg">
+      <p class="itemDescription">Home theatres</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="bluetooth.jpg" alt="electronic img" class="itemImg">
+      <p class="itemDescription">Bluetooth</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="headphones.jpg" alt="electronic img" class="itemImg">
+      <p class="itemDescription">Headphones</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="tv steamingdevices.jpg" alt="electronic img" class="itemImg">
+      <p class="itemDescription">TV streaming devices</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+  </div>
+
+  <div class="line"></div>
+
+  <div class="itemSection">
+
+    <div class="item">
+      <div class="itemHeadName">
+        <p>Fashion Top Deals</p>
+      </div>
+
+      <div class="viewAllSection">
+        <div class="viewAllButton">
+          <p class="viewAllText">VIEW ALL</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="lehanga.jpeg" alt="cloth1" class="itemImg">
+      <p class="itemDescription">Lahenga Choli & Gown</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="kurtis.jpeg" alt="cloth2" class="itemImg">
+      <p class="itemDescription">Kurtas</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="duppatas.jpeg" alt="cloth3" class="itemImg">
+      <p class="itemDescription">Dupatas</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="kurta set.jpeg" alt="cloth4" class="itemImg">
+      <p class="itemDescription">Kurta Set</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+  </div>
+
+  <div class="line"></div>
+
+  <div class="itemSection">
+
+    <div class="item">
+      <div class="itemHeadName">
+        <p>Top Deals for Today</p>
+      </div>
+
+      <div class="viewAllSection">
+        <div class="viewAllButton">
+          <p class="viewAllText">VIEW ALL</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="musicalinstruments.jpeg" alt="topDeal" class="itemImg">
+      <p class="itemDescription">Musical Instrument</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="smartwatch.jpeg" alt="topDeal" class="itemImg">
+      <p class="itemDescription">Smart Watches</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="umbrella.jpeg" alt="topDeal" class="itemImg">
+      <p class="itemDescription">Umbrella</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+
+    <div class="item">
+      <img src="softtoys.jpeg" alt="topDeal" class="itemImg">
+      <p class="itemDescription">Soft Toys</p>
+      <p class="buyNowText">Buy Now</p>
+    </div>
+  </div>
+
+
+  <footer>
+
+    <div class="footerSection">
+
+      <div class="footerLeft">
+
+        <div class="footerInfo">
+          <p class="footerInfoHeading">ABOUT</p>
+          <div class="footerContent">
+            <p>Contact Us</p>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Flipkart Stories</p>
+            <p>Press</p>
+            <p>Flipkart Wholesale</p>
+            <p>Corporate Information</p>
+          </div>
+        </div>
+
+        <div class="footerInfo">
+          <p class="footerInfoHeading">HELP</p>
+          <div class="footerContent">
+            <p>Payments</p>
+            <p>Shipping</p>
+            <p>Cancellation & Returns</p>
+            <p>FAQ</p>
+            <p>Report Infringement</p>
+          </div>
+        </div>
+
+        <div class="footerInfo">
+          <p class="footerInfoHeading">CONSUMER POLICY</p>
+          <div class="footerContent">
+            <p>Cancellation & Returns</p>
+            <p>Terms Of Use</p>
+            <p>Security</p>
+            <p>Privacy</p>
+            <p>Sitemap</p>
+            <p>Grievance Redressal</p>
+            <p>EPR Compliance</p>
+          </div>
+        </div>
+
+
+        <div class="footerInfo">
+          <p class="footerInfoHeading">SOCIAL</p>
+          <div class="footerContent">
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>YouTube</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="footerRight">
+
+        <div class="footerInfo">
+
+          <p class="footerInfoHeading">Mail Us:</p>
+          <div class="footerContent">
+            <p>Flipkart Internet Private Limited,</p>
+            <p>Buildings Alyssa, Begonia &</p>
+            <p>Clove Embassy Tech Village,</p>
+            <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p>Bengaluru, 560103,</p>
+            <p>Karnataka, India</p>
+          </div>
+        </div>
+
+        <div class="footerInfo">
+          <p class="footerInfoHeading">Registered Office Address:</p>
+          <div class="footerContent">
+            <p>Flipkart Internet Private Limited,</p>
+            <p>Buildings Alyssa, Begonia &</p>
+            <p>Clove Embassy Tech Village,</p>
+            <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p>Bengaluru, 560103,</p>
+            <p>Karnataka, India</p>
+            <p>CIN : U51109KA2012PTC066107</p>
+            <p>Telephone: 044-45614700</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footerExtras">
+      <span><i class="fa-solid fa-suitcase" style="color: #ffe500;"></i> Become a Seller</span>
+      <span><i class="fa-solid fa-star" style="color: #ffe500;"></i> Advertise</span>
+      <span><i class="fa-solid fa-gift" style="color: #ffe500;"></i> Gift Cards</span>
+      <span><i class="fa-solid fa-circle-question" style="color: #ffe500;"></i> Help Center</span>
+      <span>© 2007-2023 Flipkart.com</span>
+      <span><img src="images/payment-method.svg" alt="payment-method"></span>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

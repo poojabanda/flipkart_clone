@@ -1,0 +1,436 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navBar {
+    width: 100%;
+    height: 56px;
+    background-color:white;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/* Style for main dropdown */
+navbar .dropdown-menu {
+    background-color: #343a40; /* Dark background */
+    border: none;
+}
+
+/* Style for dropdown items */
+.navbar .dropdown-menu .dropdown-item {
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Hover effect for dropdown items */
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+/* Style for submenus */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    display: none;
+    background-color: white;
+    color:black;
+}
+
+/* Show submenu when hovering */
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Ensure submenu appears correctly on hover */
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+/* Remove arrow mark from dropdown button */
+.nav-link.dropdown-toggle::after {
+    content: none;  /* Removes the arrow symbol */
+    display: none;   /* Hides the arrow */
+}
+
+.logoSection {
+    width: 80px;
+    display: inline;
+    margin: 10px 0px 2px 5px;
+}
+
+.flipkart-logo {
+   color:blue;
+}
+
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-style: italic;
+    width: 75px;
+    height: 15.4px;
+    margin-bottom: 15px;
+}
+
+
+
+#plus {
+    color: #ffe500;
+    font-size: 11px;
+}
+
+.searchBox {
+    width: 450px;
+    display: flex;
+    margin-right: 10px;
+    
+}
+
+.input {
+    height: 36px;
+    width: 564px;
+    border-radius: 5px;
+    padding: 0 16px;
+    border-radius: 2px 0 0 2px;
+    border: 0;
+    outline: 0 none;
+    background-color: #add8e6;
+}
+
+.search-logo {
+    height: 36px;
+    width: 44px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+    padding: 4px 12px 2px 8px;
+    background-color:#add8e6;
+    border: 0;
+    outline: 0 none;
+    color:  #E9FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginBox {
+    margin-right: 10px;
+}
+
+.login {
+    color: #2874f0;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 5px 40px;
+    border: 1px solid #dbdbdb;
+}
+    /* Basic styling */
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Dropdown container */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Dropdown button */
+    .dropbtn {
+        all: unset;
+        background-color:none;
+        color:black;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 150px;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+    
+    /* Dropdown links */
+    .dropdown-content a {
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Hover effects */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    
+    /* Show dropdown when hovering */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+.cartBox {
+    width: 70px;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moreBox {
+    width: 50px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.becomeSellerBox {
+    width: 155px;
+    margin-right: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.belowNavBar {
+    padding-top: 10px;
+    display: flex;
+    max-width: 1280px;
+    color: #212121;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.smallCard {
+    /* border: 2px solid red; */
+    width: 94px;
+    height: 112px;
+    padding: 10px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.card {
+    height: 64px;
+    width: 64px;
+}
+
+
+.smallCard p {
+    text-align: center;
+}
+
+
+.heroSection {
+    background-image: url('images/heroImg.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1680px;
+    height: 280px;
+}
+.special{
+    display: flex;
+}
+.itemSection {
+    max-width: 1434px;
+    height: 314px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    width: 232px;
+    height: 314px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.itemImg {
+    width: 150px;
+    height: 200px;
+}
+
+.itemDescription {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.buyNowText {
+    color: #388e3c;
+    padding-top: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.itemHeadName {
+    word-wrap: break-word;
+    font-size: 30px;
+    line-height: 1.38;
+    color: #2e2e2e;
+    text-align: center;
+
+}
+.bestOfToday {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+}
+.bestItem {
+    width: 200px;
+    height: 300px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bestItem:hover {
+    transform: scale(1.05);
+}
+.bestItemTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.bestItemPrice {
+    color: #388e3c;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.viewMoreButton {
+    background: #2874f0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.viewMoreButton:hover {
+    background: #1a54c2;
+}
+
+.viewAllSection {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+.viewAllButton {
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    border: none;
+    height: 38px;
+    width: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewAllText {
+    font-size: 13px;
+
+}
+
+
+.line {
+    width: 100%;
+    border: none;
+    border-top: 8px solid rgba(213, 207, 207, 0.617);
+}
+
+.footerSection {
+    max-width: 1719px;
+    /* height: 346px; */
+    height: 300px;
+    background-color: #172337;
+    display: flex;
+
+}
+
+.footerLeft {
+    display: flex;
+    width: 50%;
+    margin-left: 65px;
+    justify-content: space-evenly;
+}
+
+.footerInfo {
+    width: 252px;
+    height: 194px;
+    padding-top: 40px;
+}
+
+.footerInfoHeading {
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.footerContent {
+    color: #ffffff;
+    font-size: 12px;
+
+    line-height: 2;
+}
+
+.footerRight {
+    display: flex;
+    width: 50%;
+    margin-right: 30px;
+    justify-content: space-evenly;
+}
+
+.footerExtras {
+    margin-top: 0.35px;
+    background-color: #172337;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1719px;
+    height: 70px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 2;
+    padding-left: 25px;
+    padding-right: 10px;
+}
